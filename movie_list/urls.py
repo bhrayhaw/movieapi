@@ -1,4 +1,4 @@
-from .views import MovieListView, MovieDetailView, StreamPlatformView, StreamPlatformDetailView
+from .views import MovieListView, MovieDetailView, StreamPlatformView, StreamPlatformDetailView, ReviewDetails, ReviewsList
 from django.urls import path
 
 urlpatterns = [
@@ -7,4 +7,6 @@ urlpatterns = [
     path('streamplatforms/', StreamPlatformView.as_view(), name='stream_platform'),
     path('streamplatform/<int:pk>', StreamPlatformDetailView.as_view(),
          name='stream_platform_detail'),
+    path('reviews/', ReviewsList.as_view(), name='review'),
+    path('reviews/<int:pk>', ReviewDetails.as_view(), name='review-details'),
 ]

@@ -69,6 +69,7 @@ For anyone to access all the endpoints you need to be a registered user or an ad
 **Response**
 
 - This is an example of a response from a successful registration
+        
         {
         "response": "Registration successful",
         "username": "bhrayhawkwasi",
